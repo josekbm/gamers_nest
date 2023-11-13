@@ -2,7 +2,7 @@
   "name": "gameapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://josekbm.github.io/gamers_nest",
+  "homepage": "http://gamers-nest.s3-website.eu-west-3.amazonaws.com",
   "dependencies": {
     "@babel/runtime": "^7.23.2",
     "@material-ui/core": "^4.12.4",
