@@ -27,7 +27,7 @@ const App = () => (
     <Header />
     <Container maxWidth="lg" className="main-container">
       <Switch>
-        <Route exact path='/'>
+        <Route exact path='/gamers_nest'>
           <GamesContextProvider>
             <HomePage />
           </GamesContextProvider>
