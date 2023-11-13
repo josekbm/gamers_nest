@@ -20,7 +20,9 @@
     "sass": "^1.51.0",
     "simple-react-lightbox": "^3.0.2"
   },
-  "scripts": {
+  "scripts": { 
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
