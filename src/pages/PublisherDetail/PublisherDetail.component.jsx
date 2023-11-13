@@ -11,12 +11,12 @@ const PublisherDetail = () => {
   return ( 
     <>
       {doneFetchPublisher && doneFetchPublisherGames ? (
-        <Fragment>
+        <>
           <CollectionInfo item={publisher} />
           <Grid container spacing={3}>
             <Game games={publisherGames} />
           </Grid>
-        </Fragment>
+        </>
       ) : (
         <ProgressBar />
       )}
