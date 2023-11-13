@@ -1,4 +1,4 @@
-import React, {Fragment, useContext} from 'react';
+import React, {useContext} from 'react';
 import { PublisherDetailContext } from "../../context/PublisherDetailContext";
 import Grid from "@material-ui/core/Grid";
 import ProgressBar from './../../components/Common/ProgressBar/ProgressBar.component';
@@ -9,7 +9,7 @@ import Game from './../../components/Games/Game/Game.component';
 const PublisherDetail = () => {
   const {doneFetchPublisher, doneFetchPublisherGames, publisher, publisherGames} = useContext(PublisherDetailContext);
   return ( 
-    <Fragment>
+    <>
       {doneFetchPublisher && doneFetchPublisherGames ? (
         <Fragment>
           <CollectionInfo item={publisher} />
@@ -20,7 +20,7 @@ const PublisherDetail = () => {
       ) : (
         <ProgressBar />
       )}
-    </Fragment>
+    </>
   );
 }
 

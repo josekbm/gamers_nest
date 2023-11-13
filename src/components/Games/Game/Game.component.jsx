@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
@@ -8,7 +8,7 @@ import "./Game.styles.scss";
 
 const Game = ({ games, listofgames }) => {
   return (
-    <Fragment>
+    <>
       {games.map((game) => {
         const { id, background_image, name, released, parent_platforms } = game;
         const imgSrc = background_image
@@ -49,7 +49,7 @@ const Game = ({ games, listofgames }) => {
           </Grid>
         );
       })}
-    </Fragment>
+    </>
   );
 };
 

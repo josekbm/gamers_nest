@@ -1,4 +1,4 @@
-import React, { Fragment, useContext } from "react";
+import React, { useContext } from "react";
 import { GamesContext } from "./../../context/GamesContext";
 import Grid from "@material-ui/core/Grid";
 import SearchBar from "./../../components/Games/SearchBar/SearchBar.component";
@@ -21,7 +21,7 @@ const HomePage = () => {
     validateQGame,
   } = useContext(GamesContext);
   return (
-    <Fragment>
+    <>
       <SearchBar validateQGame={validateQGame} />
       <Grid container spacing={3} style={{marginTop: '1rem'}}>
         {!doneFetchSearchedGames ? (
@@ -42,7 +42,7 @@ const HomePage = () => {
           <Message text="No results found" />
         )}
       </Grid>
-    </Fragment>
+    </>
   );
 };
 

@@ -1,4 +1,4 @@
-import React, { Fragment, useContext } from 'react';
+import React, { useContext } from 'react';
 import { GenresContext } from './../../context/GenresContext';
 import Grid from "@material-ui/core/Grid";
 import CollectionCard from './../../components/Collection/CollectionCard/CollectionCard.component';
@@ -7,7 +7,7 @@ import ProgressBar from "../../components/Common/ProgressBar/ProgressBar.compone
 const Genre = () => {
   const {doneFetchGenres, genres} = useContext(GenresContext);
   return ( 
-    <Fragment>
+    <>
       <h1 className="text-center">Genres</h1>
       {
         doneFetchGenres && genres ?
@@ -16,7 +16,7 @@ const Genre = () => {
         </Grid>
         : <ProgressBar />
       }
-    </Fragment>
+    </>
   );
 }
 

@@ -1,9 +1,9 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import Subtitle from './../Subtitle/Subtitle.component';
 import "./Lists.styles.scss";
 
 const StoreList = ({stores}) => (
-  <Fragment>
+  <>
     <Subtitle text="Get it here" />
     <ul className="list list--mt">
       {stores.map((store) => (
@@ -22,7 +22,7 @@ const StoreList = ({stores}) => (
         </li>
       ))}
     </ul>
-  </Fragment>
+  </>
 )
  
 export default StoreList;

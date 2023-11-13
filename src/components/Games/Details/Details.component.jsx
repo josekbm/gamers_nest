@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import parse from "html-react-parser";
 import Grid from "@material-ui/core/Grid";
 import Rating from "@material-ui/lab/Rating";
@@ -27,7 +27,7 @@ const Details = ({
   } = gameDetails;
 
   return (
-    <Fragment>
+    <>
       <Grid container spacing={3}>
         <Grid item sm={12} md={6}>
           <h1 className="gdetails__title">{name}</h1>
@@ -66,7 +66,7 @@ const Details = ({
           </SRLWrapper>
         </Grid>
       </Grid>
-    </Fragment>
+    </>
   );
 };
 

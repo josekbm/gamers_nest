@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
@@ -8,7 +8,7 @@ import './CollectionCard.styles.scss'
 
 const CollectionCard = ({ items, link }) => {
   return (
-    <Fragment>
+    <>
       {items.map((item) => {
         const { id, name, image_background, games } = item;
         return (
@@ -24,7 +24,7 @@ const CollectionCard = ({ items, link }) => {
           </Grid>
         );
       })}
-    </Fragment>
+    </>
   );
 };
 

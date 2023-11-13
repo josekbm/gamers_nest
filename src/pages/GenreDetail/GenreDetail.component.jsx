@@ -1,4 +1,4 @@
-import React, { Fragment, useContext } from "react";
+import React, { useContext } from "react";
 import { GenreDetailContext } from "../../context/GenreDetailContext";
 import Grid from "@material-ui/core/Grid";
 import ProgressBar from "./../../components/Common/ProgressBar/ProgressBar.component";
@@ -10,18 +10,18 @@ const GenreDetail = () => {
     GenreDetailContext
   );
   return (
-    <Fragment>
+    <>
       {doneFetchGenre && doneFetchGenreGames ? (
-        <Fragment>
+        <>
           <CollectionInfo item={genre} />
           <Grid container spacing={3}>
             <Game games={genreGames} />
           </Grid>
-        </Fragment>
+        </>
       ) : (
         <ProgressBar />
       )}
-    </Fragment>
+    </>
   );
 };
 

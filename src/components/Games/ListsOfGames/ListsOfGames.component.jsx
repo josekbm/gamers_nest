@@ -1,10 +1,10 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import Game from "./../Game/Game.component";
 
 const ListOfGames = ({ popularGames, upcomingGames, newGames }) => (
-  <Fragment>
+  <>
     <Grid item xs={12} md={6} lg={4}>
       <h3 className="mt-0">Popular Games</h3>
       <Paper elevation={3} className="games-container">
@@ -29,7 +29,7 @@ const ListOfGames = ({ popularGames, upcomingGames, newGames }) => (
         </Grid>
       </Paper>
     </Grid>
-  </Fragment>
+  </>
 );
 
 export default ListOfGames;

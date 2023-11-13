@@ -1,9 +1,9 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Subtitle from "./../Subtitle/Subtitle.component";
 import "./Lists.styles.scss";
 
 const TextList = ({ title, items, platforms, collection }) => (
-  <Fragment>
+  <>
     <Subtitle text={title} />
     <ul className="list">
       {items && collection
@@ -24,7 +24,7 @@ const TextList = ({ title, items, platforms, collection }) => (
             </li>
           ))}
     </ul>
-  </Fragment>
+  </>
 );
 
 export default TextList;
