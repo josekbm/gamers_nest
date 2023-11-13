@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gamers_nest/static/css/main.f57f3a86.css",
-    "main.js": "/gamers_nest/static/js/main.4ce4c7d3.js",
+    "main.js": "/gamers_nest/static/js/main.9864bb91.js",
     "static/media/backgound-image.jpg": "/gamers_nest/static/media/backgound-image.cc053412d60e2c569c6c.jpg",
     "static/media/xbox360.png": "/gamers_nest/static/media/xbox360.9829f23426ebb78e9443.png",
     "static/media/steam.png": "/gamers_nest/static/media/steam.1d4c513bdb055f84643a.png",
@@ -27,10 +27,10 @@
     "static/media/1.svg": "/gamers_nest/static/media/1.97ae75576d7a2f5e9933.svg",
     "static/media/7.svg": "/gamers_nest/static/media/7.861ec5b0c0ac79c50ca4.svg",
     "main.f57f3a86.css.map": "/gamers_nest/static/css/main.f57f3a86.css.map",
-    "main.4ce4c7d3.js.map": "/gamers_nest/static/js/main.4ce4c7d3.js.map"
+    "main.9864bb91.js.map": "/gamers_nest/static/js/main.9864bb91.js.map"
   },
   "entrypoints": [
     "static/css/main.f57f3a86.css",
-    "static/js/main.4ce4c7d3.js"
+    "static/js/main.9864bb91.js"
   ]
 }
